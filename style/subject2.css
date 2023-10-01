@@ -1,0 +1,22 @@
+#slider {
+  overflow: hidden;
+  position: relative;
+  /* border: 20px solid red; */
+  width: 1440px; // 이미지 보여지는 뷰 부분
+  height: 400px;
+}
+.image-box {
+  width: 5000px; // 원본+클론의 총 합
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: bannermove 30s linear infinite;
+}
+@keyframes bannermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
